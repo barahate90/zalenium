@@ -6,7 +6,8 @@ sudo: required
 
 services:
   - docker
-
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
 jobs:
   include:
     - stage: Integration and Unit Tests
@@ -57,9 +58,7 @@ jobs:
       script:
       - ./gen-scm-source.sh
       - ./push_image.sh
-    - after_success:
-      - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
-
+    
 branches:
   only:
     - master
