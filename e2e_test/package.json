@@ -6,7 +6,8 @@
   "dependencies": {
     "express": "^4.16.3",
     "npm": "^6.1.0",
-    "webdriverio": "^4.13.1"
+    "webdriverio": "^4.13.1",
+    "snyk": "^1.89.1"
   },
   "devDependencies": {
     "wdio-dot-reporter": "0.0.9",
@@ -14,8 +15,11 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "wdio tests/wdio.conf.js"
+    "test": "wdio tests/wdio.conf.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Brian Maher <brian.maher@zalando.de>",
-  "license": "Apache 2.0"
+  "license": "Apache 2.0",
+  "snyk": true
 }
