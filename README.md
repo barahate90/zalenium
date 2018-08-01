@@ -2,7 +2,7 @@
   <img id="header" height="214" width="500" src="./docs/img/logo_zalenium_wide.png" />
 
 </p>
-
+[![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/repos/barahate90/zalenium/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/repos/barahate90/zalenium/branches/master)
 [![Build Status](https://travis-ci.org/zalando/zalenium.svg?branch=master)](https://travis-ci.org/zalando/zalenium)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c719a14f5537488b8fb95d70e27acd5f)](https://www.codacy.com/app/diemol_zalenium/zalenium?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zalando/zalenium&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/zalando/zalenium/branch/master/graph/badge.svg)](https://codecov.io/gh/zalando/zalenium)
