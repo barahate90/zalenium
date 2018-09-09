@@ -122,6 +122,10 @@
             <version>${kubernetes-client.version}</version>
             <exclusions>
                <exclusion>
+                  <groupId>com.fasterxml.jackson.core</groupId>
+                  <artifactId>jackson-databind</artifactId>
+               </exclusion>
+               <exclusion>
                   <groupId>org.slf4j</groupId>
                   <artifactId>jul-to-slf4j</artifactId>
                </exclusion>
