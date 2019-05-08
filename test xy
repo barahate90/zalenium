@@ -1,4 +1,6 @@
- docker run --rm -ti --name zalenium -p 4444:4444       -v /var/run/docker.sock:/var/run/docker.sock       -v /tmp/videos:/home/seluser/videos       --privileged dosel/zalenium:234242424 start
-Unable to find image 'dosel/zalenium:234242424' locally
-docker: Error response from daemon: manifest for dosel/zalenium:234242424 not found.
-See 'docker run --help'.
+Error response from daemon: conflict: unable to remove repository reference "elgalu/selenium:latest" (must force) - container 06b0daa2762f is using its referenced image ce3946e8e5ab
+
+
+CONTAINER ID        IMAGE                    COMMAND                  CREATED             STATUS              PORTS                              NAMES
+06b0daa2762f        elgalu/selenium:latest   "entry.sh"               42 hours ago        Up 42 hours         40002/tcp, 50002/tcp               cbt_zalenium_1_e0adb3ebbbcb_HRVjQZ
+552c6e31a581        dosel/zalenium:latest    "/usr/bin/entry.sh s…"   5 days ago          Up 5 days           4445/tcp, 0.0.0.0:4442->4444/tcp   cbt_zalenium_1_e0adb3ebbbcb
