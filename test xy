@@ -1,6 +1,19 @@
-Error response from daemon: conflict: unable to remove repository reference "elgalu/selenium:latest" (must force) - container 06b0daa2762f is using its referenced image ce3946e8e5ab
+FROM node:10-alpine
 
+WORKDIR /home/node/app
 
-CONTAINER ID        IMAGE                    COMMAND                  CREATED             STATUS              PORTS                              NAMES
-06b0daa2762f        elgalu/selenium:latest   "entry.sh"               42 hours ago        Up 42 hours         40002/tcp, 50002/tcp               cbt_zalenium_1_e0adb3ebbbcb_HRVjQZ
-552c6e31a581        dosel/zalenium:latest    "/usr/bin/entry.sh s…"   5 days ago          Up 5 days           4445/tcp, 0.0.0.0:4442->4444/tcp   cbt_zalenium_1_e0adb3ebbbcb
+COPY app.js /home/node/app
+COPY bin /home/node/app/bin
+COPY config /home/node/app/config
+COPY public /home/node/app/public
+COPY scratch /home/node/app/scratch
+COPY src /home/node/app/src
+COPY package.json /home/node/app
+COPY package-lock.json /home/node/app
+
+RUN npm install
+
+EXPOSE 3000
+
+# Start the app
+CMD [ "npm", "start"]
