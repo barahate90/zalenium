@@ -7,7 +7,7 @@
     "express": "^4.16.3",
     "npm": "^6.1.0",
     "webdriverio": "^4.13.1",
-    "snyk": "^1.89.1"
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "wdio-dot-reporter": "0.0.9",
