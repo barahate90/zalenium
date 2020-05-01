@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -28,3 +28,18 @@ patch:
         patched: '2018-08-01T09:31:56.997Z'
     - npm > npm-lifecycle > node-gyp > request > hawk > cryptiles > boom > hoek:
         patched: '2018-08-01T09:31:56.997Z'
+  SNYK-JS-LODASH-567746:
+    - webdriverio > archiver > lodash:
+        patched: '2020-05-01T06:03:39.954Z'
+    - webdriverio > inquirer > lodash:
+        patched: '2020-05-01T06:03:39.954Z'
+    - webdriverio > archiver > archiver-utils > lodash:
+        patched: '2020-05-01T06:03:39.954Z'
+    - webdriverio > archiver > async > lodash:
+        patched: '2020-05-01T06:03:39.954Z'
+    - webdriverio > archiver > zip-stream > lodash:
+        patched: '2020-05-01T06:03:39.954Z'
+    - webdriverio > gaze > globule > lodash:
+        patched: '2020-05-01T06:03:39.954Z'
+    - webdriverio > archiver > zip-stream > archiver-utils > lodash:
+        patched: '2020-05-01T06:03:39.954Z'
